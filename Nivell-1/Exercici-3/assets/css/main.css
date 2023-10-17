@@ -120,3 +120,33 @@ aside article {
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 25rem) {
+    .header-top {
+        display: block;
+    }
+
+    .item {
+        margin-bottom: 1.5rem;
+    }
+
+    .item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    nav {
+        margin-top: 1.5rem;
+    }
+
+    section {
+        display: block;    
+    }
+
+    section article {
+        margin: 1.5rem 0;
+    }
+
+    section article:first-of-type {
+        margin: 0;
+    }
+}
