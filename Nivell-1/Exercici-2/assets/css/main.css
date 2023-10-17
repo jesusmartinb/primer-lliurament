@@ -79,7 +79,7 @@ section {
 article {
     background-color: #1f6cb0;
     height: 1.5rem;
-    flex-basis: 48%;
+    flex-basis: 45%;
 }
 
 section footer {
@@ -104,4 +104,19 @@ aside article {
 .copy {
     background-color: #e6af2e;
     height: 1.5rem;
+}
+
+@media screen and (max-width: 48rem) {
+    main {
+        display: block;
+        background-color: #feff03;
+    }
+
+    aside {
+        margin-top: 1.5rem;
+    }
+    
+    aside article:last-of-type {
+        margin-bottom: 0;
+    }
 }
