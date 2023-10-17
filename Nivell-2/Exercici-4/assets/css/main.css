@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-top {
+    display: flex;
+    padding: 4rem 2rem 6rem;
+    justify-content: space-between;
+    color: #808080;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.menu {
+    flex-grow: 5;
+}
+
+.redes {
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-principal li {
+    padding: 3rem 0;
+}
+
+.redes ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.fa-twitter {
+    margin-left: 1.2rem;
+}
+
+.titulo {
+    width: 88%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.5rem 0 3.6rem 0;
+    background-color: rgba(0,0,0,.05);
+    color: rgba(255,155,137,.8);
+    font-family: 'Playfair', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #808080;
+}
+
+a:visited {
+    color: #808080;
+}
+
+a:hover {
+    color: rgba(255,155,137,.8);
+    font-weight: 700;
+    transition: all .4s ease;
+}
+
+a:active {
+    color: rgba(255,155,137,.8);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 48rem) {
+    .header-top {
+        display: block;
+        padding: 2rem 1rem 8rem;
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .redes ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu-principal li {
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+    
+    .fa-brands {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    .header-top {
+        padding-top: 1rem;
+    }
+    .menu-principal {
+        display: block;
+    }
+
+    .menu-principal li {
+        padding: .5rem;
+        text-align: center;
+    }
+}
