@@ -240,3 +240,29 @@ footer .copy {
     color: #5b5b5b;
     font-size: .9rem;
 }
+
+@media screen and (max-width: 48rem) {
+    main {
+        display: block;
+    }
+
+    aside {
+        margin-top: .6rem;
+    }
+}
+
+@media screen and (max-width: 32.5rem) {
+    section {
+        display: block;
+    }
+
+    section footer {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    article p {
+        column-count: 1;
+    }
+}
