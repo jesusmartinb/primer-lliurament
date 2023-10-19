@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-top {
+    display: flex;
+    padding: 4rem 2rem 6rem;
+    justify-content: space-between;
+    color: #808080;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.menu {
+    flex-grow: 5;
+}
+
+.redes {
+    flex-grow: 1;
+}
+
+.logo img {
+    width: 5rem;
+}
+
+.menu-principal {
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-principal li {
+    padding: 3rem 0;
+}
+
+.redes ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.fa-twitter {
+    margin-left: 1.2rem;
+}
+
+.titulo {
+    width: 88%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.5rem 0 3.6rem 0;
+    background-color: rgba(0,0,0,.05);
+    color: rgba(240,128,128,.7);
+    font-family: 'Playfair', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #808080;
+}
+
+a:visited {
+    color: #808080;
+}
+
+a:hover {
+    color: rgba(240,128,128,.7);
+    font-weight: 700;
+    transition: all .4s ease;
+}
+
+a:active {
+    color: rgba(240,128,128,.7);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 48rem) {
+    .header-top {
+        display: block;
+        padding: 2rem 1rem 8rem;
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .redes ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .menu-principal li {
+        padding: 1.5rem 0;
+        text-align: center;
+    }
+    
+    .fa-brands {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    .header-top {
+        padding-top: 1rem;
+    }
+    .menu-principal {
+        display: block;
+    }
+
+    .menu-principal li {
+        padding: .5rem;
+        text-align: center;
+    }
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    margin: .6rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    flex-basis: 70%;
+    background-color: #d8d7d7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: .6rem;
+}
+
+article {
+    background-color: #f5f1f1;
+    flex-basis: calc(50% - 0.75rem);
+    padding: .6rem;
+}
+
+article img {
+    width: 100%;
+}
+
+article h2 {
+    color: #faf3eb;
+    background-color: rgba(240,128,128,1);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.25rem;
+    padding: .8rem .3rem .3rem .3rem;
+}
+
+article p {
+    padding: 1rem 0;
+    color: #5b5b5b;
+    column-count: 2;
+}
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.time {
+    position: absolute;
+    bottom: 6px;
+    left: 4px;
+    font-size: .8rem;
+    color: #efe373;
+}
+
+section footer {
+    text-align: center;
+    font-weight: 600;
+}
+
+aside {
+    flex-basis: 29%;
+    align-self: stretch;
+    background-color: #d8d7d7;
+}
+
+aside article {
+    background-color: #d8d7d7;
+}
+
+aside article h3 {
+    text-align: center;
+    padding: 2rem 2rem 1rem;
+}
+
+aside article p {
+    column-count: 1;
+    text-align: center;
+    font-weight: 600;
+    color: #363636;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #d8d7d7;
+    padding: 0 .6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer .copy {
+    background-color: #f5f1f1;
+    text-align: center;
+    padding: .6rem 0;
+    color: #5b5b5b;
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 48rem) {
+    main {
+        display: block;
+    }
+
+    aside {
+        margin-top: .6rem;
+    }
+}
+
+@media screen and (max-width: 32.5rem) {
+    section {
+        display: block;
+    }
+
+    section footer {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 25rem) {
+    article p {
+        column-count: 1;
+    }
+}
