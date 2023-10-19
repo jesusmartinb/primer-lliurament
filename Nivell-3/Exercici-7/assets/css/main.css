@@ -21,22 +21,11 @@ header {
 }
 
 .header-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr;
     padding: 4rem 2rem 6rem;
-    justify-content: space-between;
     color: #808080;
-}
-
-.logo {
-    flex-grow: 1;
-}
-
-.menu {
-    flex-grow: 5;
-}
-
-.redes {
-    flex-grow: 1;
 }
 
 .logo img {
@@ -44,8 +33,9 @@ header {
 }
 
 .menu-principal {
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -55,11 +45,16 @@ header {
 }
 
 .redes ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     list-style: none;
-    justify-content: end;
-    align-items: center;
+    justify-items: end;
     padding: 3rem 0;
+}
+
+.redes ul li:last-of-type {
+    justify-self: start;
 }
 
 .fa-twitter {
@@ -114,7 +109,6 @@ a:active {
     }
 
     .redes ul {
-        justify-content: center;
         padding: 0;
     }
 
@@ -129,40 +123,45 @@ a:active {
     }
 }
 
-@media screen and (max-width: 25rem) {
-    .header-top {
-        padding-top: 1rem;
-    }
+@media screen and (max-width: 36.25rem) {
     .menu-principal {
         display: block;
     }
-
+    
     .menu-principal li {
         padding: .5rem;
         text-align: center;
     }
+    
+    .header-top {
+        padding-top: 1rem;
+    }
+
+    .fa-brands {
+        padding-bottom: 2.6rem;
+    }
 }
 
 main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr;
     gap: 1rem;
     margin: .6rem 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
-    flex-basis: 70%;
     background-color: #d8d7d7;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5fr 5fr .5fr;
     gap: 1.5rem;
     padding: .6rem;
 }
 
 article {
     background-color: #f5f1f1;
-    flex-basis: calc(50% - 0.75rem);
     padding: .6rem;
 }
 
@@ -200,13 +199,12 @@ article p {
 }
 
 section footer {
+    grid-column: 1 /span 2;
     text-align: center;
     font-weight: 600;
 }
 
 aside {
-    flex-basis: 29%;
-    align-self: stretch;
     background-color: #d8d7d7;
 }
 
